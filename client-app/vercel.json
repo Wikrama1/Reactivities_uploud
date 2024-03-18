@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "src": "/(.*)",
-            "dest": "/main.tsx"
+            "dest": "./features/main.tsx"
         }
     ]
 }
