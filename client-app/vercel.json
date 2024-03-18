@@ -1,8 +1,0 @@
-{
-    "rewrites": [
-        {
-            "src": "/(.*)",
-            "dest": "./src/main.tsx"
-        }
-    ]
-}

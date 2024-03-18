@@ -27,7 +27,8 @@
     "react-toastify": "^10.0.4",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.5",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "vercel": "^33.6.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
