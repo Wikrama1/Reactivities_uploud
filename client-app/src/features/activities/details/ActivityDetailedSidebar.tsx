@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
 import { Activity } from '../../../app/models/activity'
 import { useStore } from '../../../app/stores/store';
-import { useState } from 'react';
-import { Profile } from '../../../app/models/profile';
 
 
 interface Props {
@@ -15,7 +13,7 @@ export default observer(function ActivityDetailedSidebar ({activity: {attendees,
     const{userStore, activityStore} = useStore()
     const {kickUserActivity, loading} = activityStore
     const {user} = userStore
-    const [target, setTarget] = useState('');
+    // const [target, setTarget] = useState('');
 
     if (!attendees) return null;
         
@@ -56,7 +54,7 @@ return (
                             content="Kick" 
                             color='red' 
                             style={{position:'absolute', right:0}} 
-                            loading={target === `main${user}` && loading}
+                            loading={/*target === `main${user}` &&*/ loading}
                             onClick={() => {
                                kickUserActivity(attendee.username)
                             }} 
